@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Instagram Photo</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   </head>    
+   <body>
+      <div class="container-fluid Post">
+         <div class="row Post-Header bg-light"style="padding-top: 20px">
+            <div class="col-1 text-right">
+               <i class="fab fa-instagram" style="font-size:30px;"></i>
+            </div>
+            <div class="text-1 col-5">
+              <label class="fs-4">Instagram</label>
+            </div>
+            <div class="col-5 text-right">
+               <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Create a new post</button>
+               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group mb-3">
+                            <label class="caption">Caption:</label>
+                            <textarea class="form-control" id="caption" rows="2" placeholder="Add the caption of your post here"></textarea>
+                          </div>
+                        </form>
+                           <div class="modal-button">
+                               <button type="button" class="btn btn-outline-dark"><i class="fas fa-camera"></i></button>
+                               <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i></button>
+                           </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+               <div class="dropdown d-inline-block">
+                  <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fas fa-cog"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                     <a class="dropdown-item" href="#">Profile</a>
+                     <a class="dropdown-item" href="#">Accessibility</a>
+                     <a class="dropdown-item" href="#">Privacy and Data</a>
+                     <hr class="dropdown-divider">
+                     <a class="dropdown-item" id="dropdown-item-red" href="#">Log out</a>
+                  </div>
+               </div>
+         </div>   
+         <div class="tab mt-4">
+            <ul class="nav nav-tabs justify-content-center">
+               <li class="nav-item">
+                  <a class="nav-link" href="#tab1" id="tab-botton"><i class="far fa-images" style="color: #2f61b6;"></i></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#tab2" id="tab-botton"><i class="far fa-image" style="color: #2f61b6;"></i></a>
+               </li>
+            </ul>
+         </div>   
+         <div class="tab-content" id="tab1">
+               <div class="grid">
+                  <div class="row">
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/cascada-erawan-otono-tailandia-hermosa-cascada-piscina-esmeralda-naturaleza_335224-777.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 1">
+                     </div>
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/colorida-cascada-majestuosa-bosque-parque-nacional-otono_554837-661.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 2">
+                     </div>
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/cascada-shiraito-otono-japon_335224-193.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 3">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/hermosa-foto-lago-cristalino-junto-base-montana-nevada-dia-soleado_181624-5459.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 4">
+                     </div>
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/cascada-erawan-tailandia-hermosa-cascada-piscina-esmeralda-naturaleza_335224-776.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 5">
+                     </div>
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/arbol-solitario_181624-46361.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 6">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/reflejo-luces-montana-lago-capturado-parco-ciani-lugano-suiza_181624-24209.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 7">
+                     </div>
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/cascada_335224-985.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 8">
+                     </div>
+                     <div class="col-4">
+                        <img src="https://img.freepik.com/foto-gratis/cascada-barco-limpio-china-natural_1417-1356.jpg?size=626&ext=jpg&ga=GA1.1.564284029.1647550287&semt=ais" class="img-fluid mb-3" alt="Photo 9">
+                     </div>
+                  </div>
+               </div>
+         </div>
+         <div class="tab-content" id="tab2">
+            <div class="card">
+               <div class="card-header post-header">
+                <div class="row d-flex align-items-center">
+                    <h4 class="col -6 mb-0">My Crazy Dog Spark</h4>
+                    <p class="card-text">08/10</p>                 
+                </div><br>
+                  <img src="https://www.nationalgeographic.com.es/medio/2022/12/02/perro-cuadrada_dd18bf3f_221202023020_800x800.jpg" alt="Foto de Spark" class="card-img-top" style="max-height: 300px; object-fit: cover;">
+               <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="card-title"><strong>204 Likes</strong></div>
+                  </div>
+                  <p class="card-text">This is an example of a very good photo that you can't post on Instagram.</p>
+               </div>
+            </div> <br>
+            <div class="card">
+               <div class="card-header post-header">
+                  <div class="row d-flex align-items-center">
+                     <h4 class="col -6 mb-0">The greatness of Croatia</h4>
+                     <p class="card-text">04/09</p>
+                  </div><br>
+               </div>
+               <img src="https://coleccionistasdeislas.com/wp-content/uploads/2021/10/croaciaprimera.jpg" alt="Foto de Spark" class="card-img-top" style="max-height: 300px; object-fit: cover;">
+               <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="card-title"><strong>26985 Likes</strong></div>
+                  </div>
+                  <p class="card-text">This is an example of a very good photo that you can't post on Instagram.</p>
+                </div>
+            </div> <br>
+            <div class="card">
+               <div class="card-header post-header">
+                  <div class="row d-flex align-items-center">
+                     <h4 class="col-10 mb-0">Amazing GOAL by Cristiano!</h4>
+                     <p class="card-text">06/10</p> 
+                  </div><br>
+               </div>
+               <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/04/03/15227865244147.jpg" alt="Foto de Spark" class="card-img-top" style="max-height: 300px; object-fit: cover;">
+               <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="card-title"><strong>352658 Likes</strong></div>
+                  </div>
+                  <p class="card-text">This is an example of a very good photo that you can't post on Instagram.</p>
+               </div>
+            </div>
+         </div> 
+      </div>     
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   </body>
+</html>
